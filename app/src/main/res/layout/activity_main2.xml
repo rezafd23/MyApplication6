@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLient"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/client"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client"
+        android:textSize="20dp"
+        android:id="@+id/txtchatview"
+        android:layout_below="@+id/client"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_margin="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint=""
+        android:id="@+id/txtchatclient"/>
+
+    <Button
+        android:id="@+id/btnsend2"
+        android:background="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:text="Send"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/txtchatclient"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
